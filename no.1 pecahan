@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+void pecahan () {
+    int x,y;
+}
+
+int main () {
+    int p1x,p2x,Tx,Kx,Xx,Bx,p1y,p2y,Ty,Ky,Xy,By;
+    
+    cout << "masukan pembilang 1 = ";
+    cin >> p1x;
+    cout << "masukan penyebut 1 = ";
+    cin >> p1y;
+    cout << "masukan pembilang 2 = ";
+    cin >> p2x;
+    cout << "masukan penyebut 2 = ";
+    cin >> p2y;
+    
+    Tx = (p1x*p2y) + (p2x*p1y);
+    Ty = p1y*p2y;
+    Kx = (p1x*p2y) - (p2x*p1y);
+    Ky = p1y*p2y;
+    
+    Xx = p1x*p2x;
+    Xy = p1y*p2y;
+    Bx = p1x*p2y;
+    By = p1y*p2x;
+    
+    cout << "hasil jumlah = " << Tx << "/" << Ty << endl;
+    cout << "hasil kurang = " << Kx << "/" << Ky << endl;
+    cout << "hasil kali = " << Xx << "/" << Xy << endl;
+    cout << "hasil bagi = " << Bx << "/" << By << endl;
+    
+    return 0;
+}
